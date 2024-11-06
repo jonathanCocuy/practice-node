@@ -12,7 +12,7 @@ const colors = require('colors');
 const server = http.createServer(function (req, res) {
   console.log(req.url);
   if (req.url === "/profile") {
-    res.write("Bienvenido a profile");
+    res.write("Bienvenido a tu servidor NODE JS");
     return res.end();
   }
 
