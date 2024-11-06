@@ -12,14 +12,16 @@ const colors = require('colors');
 const server = http.createServer(function (req, res) {
   console.log(req.url);
   if (req.url === "/profile") {
-    res.write("Bienvenido a tu servidor NODE JS");
+    res.write("Bienvenido a tu servidor CAMILA");
     return res.end();
   }
 
-  res.write("Página no encontrada");
+  res.write("Página no encontrada", "utf-8");
   res.end();
 });
 
-server.listen(3000);
+server.listen(3005);
 
-console.log("Server running on port 3000...".green);
+console.log("Server running on port 3000...".blue);
+
+
